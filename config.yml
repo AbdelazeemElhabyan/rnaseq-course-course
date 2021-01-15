@@ -1,0 +1,16 @@
+title: RNAseq-course
+description: This contains scripts and data for RNAseq course
+template:
+  repo: rnaseq-course-template
+  name: rnaseq-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
